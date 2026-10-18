@@ -1,0 +1,84 @@
+# ==========================================
+# 1. VARIÁVEIS DE AMBIENTE E SEGREDOS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# 2. PYTHON & FASTAPI (BACKEND)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ambientes virtuais (caso rode fora do Docker)
+.venv/
+venv/
+env/
+ENV/
+
+# Caches de ferramentas, testes e tipagem
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# 3. NODE, REACT, VITE & PWA (FRONTEND)
+# ==========================================
+node_modules/
+dist/
+dist-ssr/
+build/
+*.local
+
+# Arquivos gerados automaticamente pelo vite-plugin-pwa em dev/build
+dev-dist/
+sw.js
+sw.js.map
+workbox-*.js
+workbox-*.js.map
+
+# Logs de gerenciadores de pacotes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Cache do TypeScript
+*.tsbuildinfo
+
+# ==========================================
+# 4. BANCO DE DADOS & DOCKER
+# ==========================================
+# Caso mapeie volumes locais no futuro em vez de named volumes
+postgres_data/
+pgdata/
+*.sql.gz
+*.dump
+
+# ==========================================
+# 5. SISTEMA OPERACIONAL & IDEs
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux / Windows
+*~
+Thumbs.db
+Desktop.ini
+
+# Editores (VS Code, Cursor, PyCharm)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
